@@ -3,6 +3,7 @@ import Footer from "./Partials/Footer";
 import AboutMe from "./AboutMe";
 import ContactMe from "./ContactMe";
 import MyProjects from "./MyProjects";
+import { ArrowUpIcon } from "../utils/BrandsIcons";
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
         <ContactMe />
       </div>
       <Footer />
+      <button className="fixed bottom-2 right-2 bg-cyan-400 p-2 rounded-full">
+        <a href="#header" className="flex justify-center items-center">
+          <ArrowUpIcon height={25} width={25} />
+        </a>
+      </button>
     </div>
   );
 }

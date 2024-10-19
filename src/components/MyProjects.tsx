@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Project } from "../my-types";
+import { Project } from "../typings/my-types";
 import BrandsIcons from "../utils/BrandsIcons";
 
 function MyProjects() {
@@ -52,10 +52,10 @@ function MyProjects() {
   return (
     <div
       id="my-projects"
-      className="w-full flex flex-col justify-center items-center"
+      className="w-full flex flex-col justify-center items-center p-2 gap-2"
     >
-      <h2 className="w-full flex justify-center items-center text-3xl">
-        My Projects
+      <h2 className="flex justify-center items-center text-3xl border-b-2 border-cyan-400 hover:border-cyan-600 transition-all duration-300">
+        <a href="#my-projects">My Projects</a>
       </h2>
       <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2 gap-2">
         {projects.map((project) => {

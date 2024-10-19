@@ -12,3 +12,9 @@ export type Project = {
   repositoryLink: string;
   deployLink: string;
 };
+
+export type CustomSelectOption = {
+  icon: React.ReactNode;
+  title: string;
+  value: string;
+}

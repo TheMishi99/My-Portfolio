@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { Link } from "../my-types";
+import type { Link } from "../typings/my-types";
 
 interface NavbarProps {
   items: Array<Link>;
