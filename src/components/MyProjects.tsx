@@ -1,54 +1,62 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Project } from "../typings/my-types";
 import BrandsIcons from "../utils/BrandsIcons";
 
 function MyProjects() {
-  const [projects, setProjects] = useState<Array<Project>>([]);
-  useEffect(() => {
-    setProjects([
-      {
-        id: 1,
-        title: "Test Mercado Pago App",
-        image: "/projectsScreenshots/TestMercadoPagoApp.png",
-        description:
-          "At this project I implemented the Mercado Pago SDK to test the payments",
-        stack: [
-          "ExpressJS",
-          "MongoDB",
-          "NodeJS",
-          "ReactJS",
-          "TypeScript",
-          "TailwindCSS",
-        ],
-        repositoryLink: "https://github.com/TheMishi99/test-mercado-pago-app",
-        deployLink: "https://test-mercado-pago-app.vercel.app/",
-      },
-      {
-        id: 2,
-        title: "Astro Spotify Clon",
-        image: "/projectsScreenshots/AstroSpotifyClon.png",
-        description: "This app tries to simulate the official Spotify Web App",
-        stack: ["Astro", "NodeJS", "ReactJS", "TypeScript", "TailwindCSS"],
-        repositoryLink: "https://github.com/TheMishi99/AstroSpotifyClon",
-        deployLink: "https://astro-spotify-clon-roan.vercel.app/",
-      },
-      {
-        id: 3,
-        title: "React HTML Games",
-        image: "/projectsScreenshots/ReactHTMLGames.png",
-        description:
-          "This app uses React but mostly HTML. It is designed to let you play some basic videogames",
-        stack: [
-          "NodeJS",
-          "ReactJS",
-          "TypeScript",
-          "TailwindCSS",
-        ],
-        repositoryLink: "https://github.com/TheMishi99/ReactHtmlGames",
-        deployLink: "https://react-html-games.vercel.app/",
-      },
-    ]);
-  }, []);
+  const [projects] = useState<Array<Project>>([
+    {
+      id: 1,
+      title: "Mercado Liebre",
+      image: "/projectsScreenshots/MercadoLiebre.png",
+      description:
+        "This is a fake e-commerce website that i made as final project for course in CoderHouse",
+      stack: [
+        "ExpressJS",
+        "NodeJS",
+        "SequelizeJS",
+        "PostgresSQL",
+        "ReactJS",
+        "TypeScript",
+        "TailwindCSS",
+      ],
+      repositoryLink: "https://github.com/TheMishi99/Mercado-Liebre",
+      deployLink: "https://mercado-liebre-flame.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "Mishi-Chat App",
+      image: "/projectsScreenshots/MishiChatApp.png",
+      description:
+        "This is a chat app that I made to learn how to use WebSockets",
+      stack: [
+        "ExpressJS",
+        "MongoDB",
+        "NodeJS",
+        "ReactJS",
+        "TypeScript",
+        "TailwindCSS",
+      ],
+      repositoryLink: "https://github.com/TheMishi99/Mishi-Chat",
+      deployLink: "https://mishi-chat.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "Test Mercado Pago App",
+      image: "/projectsScreenshots/TestMercadoPagoApp.png",
+      description:
+        "At this project I implemented the Mercado Pago SDK to test the payments",
+      stack: [
+        "ExpressJS",
+        "MongoDB",
+        "NodeJS",
+        "ReactJS",
+        "TypeScript",
+        "TailwindCSS",
+      ],
+      repositoryLink: "https://github.com/TheMishi99/test-mercado-pago-app",
+      deployLink: "https://test-mercado-pago-app.vercel.app/",
+    },
+  ]);
   return (
     <div
       id="my-projects"
