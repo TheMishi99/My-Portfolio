@@ -38,8 +38,9 @@ export default function Navbar({ items }: NavbarProps) {
           </button>
           {showBurguerMenu && (
             <ul
-              className={`w-full flex flex-row flex-wrap justify-center items-center py-2 gap-2${showBurguerMenu ? "scale-100" : "scale-0"
-                } transition-all`}
+              className={`w-full flex flex-row flex-wrap justify-center items-center py-2 gap-2${
+                showBurguerMenu ? "scale-100" : "scale-0"
+              } transition-all`}
             >
               {items.map((item, index) => {
                 return (

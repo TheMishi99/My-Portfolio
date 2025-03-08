@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Project } from "../typings/my-types";
-import BrandsIcons from "../utils/BrandsIcons";
+import { Project } from "../../typings/my-types";
+import BrandsIcons from "../../utils/BrandsIcons";
 
 function MyProjects() {
   const [projects] = useState<Array<Project>>([

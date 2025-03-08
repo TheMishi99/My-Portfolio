@@ -1,8 +1,8 @@
 import Header from "./Partials/Header";
 import Footer from "./Partials/Footer";
-import AboutMe from "./AboutMe";
-import ContactMe from "./ContactMe";
-import MyProjects from "./MyProjects";
+import AboutMe from "./Sections/AboutMe";
+import ContactMe from "./Sections/ContactMe";
+import MyProjects from "./Sections/MyProjects";
 import { ArrowUpIcon } from "../utils/BrandsIcons";
 
 function App() {

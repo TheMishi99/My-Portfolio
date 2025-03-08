@@ -1,4 +1,4 @@
-import { EmailIcon } from "../utils/BrandsIcons";
+import { EmailIcon } from "../../utils/BrandsIcons";
 
 function ContactMe() {
   return (

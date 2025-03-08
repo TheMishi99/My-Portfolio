@@ -11,7 +11,7 @@ function AboutMe() {
       </h2>
       <div
         id="my-info"
-        className="w-full max-w-[700px] flex-row flex justify-center items-center p-2 gap-2"
+        className="w-full md:max-w-[700px] flex-col md:flex-row flex justify-center items-center p-2 gap-2"
       >
         <div id="img" className="w-[30%] flex justify-center items-center">
           <img
@@ -22,24 +22,37 @@ function AboutMe() {
         </div>
         <div
           id="info"
-          className="w-[70%] flex flex-col justify-center items-center gap-2"
+          className="w-full md:w-[70%] flex flex-col justify-center items-center gap-2"
         >
           <p className="w-full">
-            My Name is <span className="font-bold text-cyan-400">Matias Demian Sayago</span>
+            My Name is{" "}
+            <span className="font-bold text-cyan-400">
+              Matias Demian Sayago
+            </span>
           </p>
           <p className="w-full">
-            I'm a 2 years experienced <span className="font-bold text-cyan-400">Full Stack Web Developer</span> with a passion for creating efficient,
-            scalable, and user-friendly web applications.
+            I'm a 2 years experienced{" "}
+            <span className="font-bold text-cyan-400">
+              Full Stack Web Developer
+            </span>{" "}
+            with a passion for creating efficient, scalable, and user-friendly
+            web applications.
           </p>
           <p className="w-full">
-            My Main Stack is MERN (<span className="font-bold text-cyan-400">MongoDB, Express, React, Node.js</span>)
+            My Main Stack is MERN (
+            <span className="font-bold text-cyan-400">
+              MongoDB, Express, React, Node.js
+            </span>
+            )
           </p>
           <p className="w-full">
-            I'm also familiarized with <span className="font-bold text-cyan-400">NextJS</span>, the React Framework.
+            I'm also familiarized with{" "}
+            <span className="font-bold text-cyan-400">NextJS</span>, the React
+            Framework.
           </p>
           <p className="w-full">
-            I'm always looking for new challenges and opportunities to learn
-            and grow as a developer.
+            I'm always looking for new challenges and opportunities to learn and
+            grow as a developer.
           </p>
         </div>
       </div>
